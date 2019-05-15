@@ -1,4 +1,4 @@
-This is a guide on how to prepare a 16.04 LTS Ubuntu for Xilinx DNNDK 3.0
+This is a concise guide on how to prepare a 16.04 LTS Ubuntu for Xilinx DNNDK 3.0
 
 ## Install NVIDIA Driver
 
@@ -52,7 +52,7 @@ sudo ldconfig
 
 Edit /etc/environments with:
 
-```sudo vim /etc/environments```
+```sudo gedit /etc/environment```
 
 Add `:/usr/local/cuda/bin` to the end of PATH=
 
@@ -62,5 +62,6 @@ Do `reebot`
 
 
 
-Sources:
+## Sources:
+For more detailed instructions please refer to:
 - https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8
