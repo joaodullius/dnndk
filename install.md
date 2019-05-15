@@ -125,9 +125,9 @@ sudo ldconfig
 sudo rm cudnn-9.0-linux-x64-v7.tgz 
 ```
 
-# 2. Install Python 3.6
-# 3. Install Anaconda
-# 4. Install Tensorflow
+## 2. Install Python 3.6
+## 3. Install Anaconda
+## 4. Install Tensorflow
 
 
 ## Sources:
