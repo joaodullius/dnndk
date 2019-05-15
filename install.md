@@ -126,7 +126,32 @@ sudo rm cudnn-9.0-linux-x64-v7.tgz
 ```
 
 ## 2. Install Python 3.6
+
+```
+apt-get install zlib1g-dev
+cd /opt
+wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
+tar -xvf Python-3.6.8.tgz
+cd Python-3.6.8
+./configure
+make make install
+```
 ## 3. Install Anaconda
+``` 
+wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+bash ./Anaconda3-2019.03-Linux-x86_64.sh
+source ~/.bashrc
+```
+To test:
+```
+conda create --name test_conda python=3.6
+source activate test_conda
+python --version
+source deactivate
+conda deactivate
+conda info --envs
+```
+
 ## 4. Install Tensorflow
 
 
