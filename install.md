@@ -153,6 +153,18 @@ conda info --envs
 ```
 
 ## 4. Install Tensorflow
+```
+conda create --name tensorflow python=3.6
+conda activate tensorflow 
+pip install --ignore-installed --upgrade  https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.9.0-cp36-cp36m-linux_x86_64.whl
+python
+```
+```
+>>> import tensorflow as tf
+>>> hello = tf.constant('Hello, World!')
+>>> sess = tf.Session()
+>>> print(sess.run(hello))
+```
 
 
 ## Sources:
