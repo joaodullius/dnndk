@@ -1,8 +1,8 @@
 This is a concise guide on how to prepare a 16.04 LTS Ubuntu for Xilinx DNNDK 3.0
 
-# 1. Install NVIDIA + CUDA + cuDNN
+## 1. Install NVIDIA + CUDA + cuDNN
 
-## 1.1. Install NVIDIA Driver
+### 1.1. Install NVIDIA Driver
 
 My notebook has a NVIDIA 930M mobile GPU and UEFI secure boot disabled.
 
@@ -37,7 +37,7 @@ Wed May 15 13:02:20 2019
 +-----------------------------------------------------------------------------+
 ```
 
-## 1.2. Install CUDA 9.0
+### 1.2. Install CUDA 9.0
 
 Download and install CUDA 9.0 (Nvidia Drivers + CUDA + Cuda Samples) - 1.5Gb Download
 ```
@@ -113,7 +113,21 @@ Device 0: "GeForce 930M"
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 9.0, CUDA Runtime Version = 9.0, NumDevs = 1
 Result = PASS
 ```
-## 1.3. Install cuDNN 7.0.5 
+### 1.3. Install cuDNN 7.0.5 
+
+Download cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0 from https://developer.nvidia.com/rdp/cudnn-archive
+
+```
+sudo mv cudnn-9.0-linux-x64-v7.tgz /usr/local
+cd /usr/local
+sudo tar -xvzf cudnn-9.0-linux-x64-v7.tgz 
+sudo ldconfig
+sudo rm cudnn-9.0-linux-x64-v7.tgz 
+```
+
+# 2. Install Python 3.6
+# 3. Install Anaconda
+# 4. Install Tensorflow
 
 
 ## Sources:
